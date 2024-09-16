@@ -1,0 +1,124 @@
+/* src/Dashboard.css */
+
+/* การใช้ฟอนต์ที่รองรับภาษาไทย */
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400;700&display=swap');
+
+.dashboard-container {
+  font-family: 'Sarabun', sans-serif; /* ใช้ฟอนต์ Sarabun สำหรับภาษาไทย */
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 28px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #007bff, #00d2ff);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.logout-button:hover {
+  background: linear-gradient(90deg, #0056b3, #00bcd4);
+}
+
+main {
+  margin-top: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.mic-container {
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #424242, #1e1e1e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mic-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, #ff0000, #ff5e5e);
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.mic-icon.recording {
+  background: linear-gradient(45deg, #00ff00, #5eff5e);
+}
+
+.message-box {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 600px;
+  height: 150px;
+  background: #333;
+  color: #e0e0e0;
+  border-radius: 10px;
+  padding: 15px;
+  overflow-y: auto;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* สไตล์สำหรับปุ่มเคลียร์ข้อความ */
+.clear-button {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #ff0000, #ff5e5e);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.clear-button:hover {
+  background: linear-gradient(90deg, #cc0000, #cc4d4d);
+}
+
+/* สไตล์สำหรับปุ่ม Save as Note */
+.save-button {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #28a745, #85d681);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+.save-button:hover {
+  background: linear-gradient(90deg, #1e7e34, #6fcf60);
+}
